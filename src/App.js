@@ -4,10 +4,16 @@ import PigPen from './components/PigPen.js';
 
 
 class App extends Component {
+  
+
+	panicking = () => {
+
+	}
+
   render() {
     return (
       <div className="App">
-        <PigPen />
+        <PigPen panicking={this.panicking}/>
       </div>
     );
   }
